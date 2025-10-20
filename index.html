@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guía: Retiro por Desempleo y Rechazos Bancarios</title>
+    <!-- Carga de Tailwind CSS --><script src="https://cdn.tailwindcss.com"></script>
+    <!-- Configuración para usar la fuente Inter y un esquema de colores --><script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary': '#1A335D', // Azul oscuro del logo de Afore Coppel
+                        'secondary': '#FDB913', // Amarillo del logo de Afore Coppel
+                        'background-light': '#f8fafc',
+                        'card-bg': '#ffffff',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Estilo base para el scroll */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc;
+        }
+
+        /* Estilo de la línea de tiempo (solo para diseño) */
+        .timeline-item {
+            position: relative;
+            padding-left: 2.5rem; /* Espacio para el círculo */
+            border-left: 2px solid #e2e8f0; /* Línea gris de la línea de tiempo */
+        }
+        .timeline-item:last-child {
+            border-left: none; /* Eliminar línea del último elemento */
+            padding-bottom: 0;
+        }
+        .timeline-dot {
+            position: absolute;
+            left: -0.5rem; /* Mover el círculo a la línea */
+            top: 0;
+            width: 1rem;
+            height: 1rem;
+            background-color: var(--tw-colors-primary); /* Usar color primario de Tailwind */
+            border-radius: 50%;
+            border: 3px solid #f8fafc;
+        }
+    </style>
+</head>
+<body class="antialiased text-gray-800">
+
+    <div class="max-w-4xl mx-auto p-4 sm:p-8">
+
+        <!-- Encabezado Principal y Breve Introducción con Logo --><header class="text-center py-10 mb-8 bg-white shadow-lg rounded-xl">
+            <div class="mb-6 flex justify-center">
+                <!-- Logo de Afore Coppel -->
+                <img src="afore 2.png" alt="Logo de Afore Coppel" class="h-16 sm:h-20 mx-auto">
+            </div>
+            <h1 class="text-3xl sm:text-4xl font-extrabold text-primary mb-2">
+                Guía Esencial: Retiro Parcial por Desempleo
+            </h1>
+            <p class="text-xl font-light text-gray-600">
+                Proceso, Requisitos y Estrategias para Evitar Rechazos Bancarios
+            </p>
+            <p class="mt-4 text-sm text-gray-500 max-w-2xl mx-auto">
+                Este documento presenta la información clave del servicio de Retiro por Desempleo, enfocándose en la prevención y solución de problemas de pago bancarios.
+            </p>
+        </header>
+
+        <!-- Sección 1: ¿Qué es un Retiro por Desempleo? --><section class="mb-12">
+            <h2 class="text-2xl font-bold text-primary mb-4 flex items-center">
+                <!-- Icono de Búsqueda --><svg class="w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-1.258-8.455-3.245m16.891 0c-2.235 1.987-5.272 3.245-8.455 3.245S5.335 13.003 3.1 11.016m16.8 0c-2.235 1.987-5.272 3.245-8.455 3.245S5.335 13.003 3.1 11.016M12 21v-3m0-18v3m8.59 7l-2.61-1.5m-17.18 3l2.61-1.5M4 11.016l3 1.5m14.01 1.5l-3-1.5m-17.18 3l2.61-1.5m14.57 3l2.61-1.5"></path></svg>
+                1. Retiro Parcial por Desempleo: La Esencia
+            </h2>
+            <div class="bg-card-bg p-6 rounded-lg shadow">
+                <p class="text-lg font-medium text-gray-700">
+                    Es un derecho del trabajador de retirar una parte de los recursos de su Cuenta Individual Afore
+                    cuando se encuentra en situación de desempleo. <strong class="text-primary">Funciona como un apoyo económico</strong> mientras
+                    encuentra un nuevo trabajo.
+                </p>
+                <p class="mt-3 text-sm text-gray-500">
+                    <span class="font-bold">Recuerda:</span> Este servicio es un derecho legal y está sujeto a los requisitos de ley y validación del IMSS.
+                </p>
+            </div>
+        </section>
+
+        <!-- Sección 2: ¿Cuándo y Cómo Cobrarlo? (Requisitos y Modalidades) --><section class="mb-12">
+            <h2 class="text-2xl font-bold text-primary mb-4 flex items-center">
+                <!-- Icono de Calendario/Reloj --><svg class="w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h.01M8 21h8a2 2 0 002-2V7a2 2 0 00-2-2H8a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
+                2. Requisitos Clave y Modalidades de Retiro
+            </h2>
+            <div class="bg-card-bg p-6 rounded-lg shadow">
+                <p class="text-lg font-semibold mb-3">Requisitos esenciales para solicitarlo:</p>
+                <ul class="list-none space-y-2 text-gray-700">
+                    <li class="flex items-start"><span class="text-secondary mr-2 text-xl font-bold">&check;</span>Tener al menos 46 días naturales en situación de desempleo (dado de baja en el IMSS).</li>
+                    <!-- CORRECCIÓN: Ortografía de "Tener 3 años mínimo registrado" --><li class="flex items-start"><span class="text-secondary mr-2 text-xl font-bold">&check;</span>Tener <strong class="text-primary">3 años mínimo</strong> registrado en una Afore.</li>
+                    <li class="flex items-start"><span class="text-secondary mr-2 text-xl font-bold">&check;</span>Contar con 12 bimestres de cotización ante el IMSS (104 semanas cotizadas).</li>
+                    <li class="flex items-start"><span class="text-secondary mr-2 text-xl font-bold">&check;</span>No haber ejercido este derecho durante los 5 años anteriores al trámite.</li>
+                    <li class="flex items-start"><span class="text-secondary mr-2 text-xl font-bold">&check;</span>Contar con un Expediente de Identificación actualizado y con un Enrolamiento Biométrico.</li>
+                </ul>
+
+                <p class="text-lg font-semibold mt-6 mb-3 border-t pt-4">Modalidades Equivalentes a las que puede aplicar un trabajador:</p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <!-- Modalidad A Revisada --><div class="p-4 bg-blue-50 rounded-lg border border-blue-200">
+                        <h3 class="font-bold text-primary">Modalidad A: Retiro de 30 días de SBC</h3>
+                        <p class="text-sm mt-1">
+                            Aplica si la Cuenta Individual tiene al menos 3 años de haber sido abierta y tiene un mínimo de 12 bimestres de cotización al IMSS acreditados (104 semanas). Podrá retirar en una exhibición la cantidad que resulte equivalente a 30 días de su último Salario Base de Cotización (SBC), con un límite de 10 veces el valor de la UMA mensual (Unidad de Medida y Actualización).
+                        </p>
+                    </div>
+                    <!-- Modalidad B Revisada --><div class="p-4 bg-blue-50 rounded-lg border border-blue-200">
+                        <h3 class="font-bold text-primary">Modalidad B: Retiro del 11.5% del Saldo o 90 días de SBC</h3>
+                        <p class="text-sm mt-1">
+                            Aplica si la Cuenta Individual tiene 5 años o más de haber sido abierta y tiene un mínimo de 12 bimestres de cotización al IMSS acreditados (104 semanas). Podrá retirar la cantidad que resulte menor entre 90 días de su propio SBC de las últimas 250 semanas (o las que tuviere), o el 11.5% del saldo de la Subcuenta de RCV (Retiro, Cesantía en Edad Avanzada y Vejez).
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección 3: Documentos Necesarios --><section class="mb-12">
+            <h2 class="text-2xl font-bold text-primary mb-4 flex items-center">
+                <!-- Icono de Documentos --><svg class="w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m-5 8a2 2 0 01-2-2v-1h9V6a2 2 0 012-2h1V3a2 2 0 00-2-2H4a2 2 0 00-2 2v18a2 2 0 002 2h5z"></path></svg>
+                3. Documentación Obligatoria
+            </h2>
+            <div class="bg-card-bg p-6 rounded-lg shadow">
+                <p class="text-lg font-semibold mb-3">Reúne lo siguiente (original y vigente):</p>
+                <ul class="list-disc pl-5 space-y-3 text-gray-700">
+                    <li>
+                        <strong class="text-primary">Identificación Oficial Vigente:</strong> Credencial para Votar, PASAPORTE o Matrícula Consular.
+                    </li>
+                    <li>
+                        <strong class="text-primary">Comprobante de Domicilio:</strong> No mayor a 3 meses de antigüedad.
+                    </li>
+                    <li>
+                        <strong class="text-primary">Carátula de Estado de Cuenta Bancario:</strong> Debe ser de una tarjeta de débito y cumplir con 4 reglas de oro:
+                        <ul class="list-circle pl-6 mt-2 text-sm text-gray-600 space-y-1">
+                            <li>Debe estar <strong class="text-secondary">activa y vigente.</strong></li>
+                            <li><strong class="text-secondary">Sin monto máximo de depósito</strong> (clave para evitar rechazos).</li>
+                            <li>Debe mostrar claramente tu <strong class="text-secondary">Nombre, RFC y Cuenta CLABE</strong> correctos.</li>
+                            <li>Fecha de emisión <strong class="text-secondary">menor a 3 meses.</strong></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Sección 4: Canales de Trámite --><section class="mb-12">
+            <h2 class="text-2xl font-bold text-primary mb-4 flex items-center">
+                <!-- Icono de Canales --><svg class="w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 21h7a2 2 0 002-2V9a2 2 0 00-2-2h-7m-6 4h6m-6 0a2 2 0 002 2h4M7 9v6m-2 2h8a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2z"></path></svg>
+                4. Canales de Trámite en Afore Coppel
+            </h2>
+            <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
+                <div class="p-4 bg-card-bg rounded-lg shadow text-center border-b-4 border-secondary">
+                    <p class="font-bold text-sm">Módulo Afore Coppel</p>
+                    <p class="text-xs text-gray-500">Con Asesor Previsional</p>
+                </div>
+                <div class="p-4 bg-card-bg rounded-lg shadow text-center border-b-4 border-secondary">
+                    <p class="font-bold text-sm">Módulo de Autoservicio</p>
+                    <p class="text-xs text-gray-500">Rápido y autónomo</p>
+                </div>
+                <div class="p-4 bg-card-bg rounded-lg shadow text-center border-b-4 border-secondary">
+                    <p class="font-bold text-sm">App Afore Móvil</p>
+                    <p class="text-xs text-gray-500">Desde tu celular</p>
+                </div>
+                <div class="p-4 bg-card-bg rounded-lg shadow text-center border-b-4 border-secondary">
+                    <p class="font-bold text-sm">Aforeweb.com.mx</p>
+                    <p class="text-xs text-gray-500">Trámite en línea</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección 5: Línea del Tiempo del Proceso Operativo --><section class="mb-12">
+            <h2 class="text-2xl font-bold text-primary mb-6 flex items-center">
+                <!-- Icono de Flujo --><svg class="w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                5. Línea del Tiempo: El Ciclo Operativo de Pago
+            </h2>
+
+            <div class="bg-card-bg p-6 rounded-lg shadow">
+                <!-- Timeline Container --><div class="space-y-8">
+                    <!-- Paso 1 --><div class="timeline-item pb-8">
+                        <div class="timeline-dot"></div>
+                        <h3 class="text-lg font-bold text-gray-800">1. Generación del Servicio</h3>
+                        <p class="text-sm text-gray-600">El trabajador inicia el trámite en cualquiera de los medios compartidos.</p>
+                    </div>
+                    <!-- Paso 2 --><div class="timeline-item pb-8">
+                        <div class="timeline-dot bg-secondary"></div>
+                        <h3 class="text-lg font-bold text-gray-800">2. Validación y Certificación IMSS</h3>
+                        <p class="text-sm text-gray-600">El servicio entra a la bandeja para su validación. Se obtiene la certificación por parte del IMSS (confirmación de cumplimiento de requisitos).</p>
+                    </div>
+                    <!-- Paso 3 --><div class="timeline-item pb-8">
+                        <div class="timeline-dot"></div>
+                        <h3 class="text-lg font-bold text-gray-800">3. Intento de Pago Bancario</h3>
+                        <p class="text-sm text-gray-600">Si el servicio es procedente, entra en proceso de pago. Se realiza un intento de depósito a la cuenta bancaria CLABE.</p>
+                    </div>
+                    <!-- Paso 4 - ACEPTADO --><div class="timeline-item pb-8 border-l border-green-400">
+                        <div class="timeline-dot bg-green-500"></div>
+                        <h3 class="text-lg font-bold text-green-700">4A. PAGO ACEPTADO: Recurso Depositado</h3>
+                        <p class="text-sm text-gray-600">El pago es aceptado por la institución bancaria y se pone a disposición del trabajador.</p>
+                    </div>
+                    <!-- Paso 4 - RECHAZADO --><div class="timeline-item pb-8 border-l border-red-400">
+                        <div class="timeline-dot bg-red-500"></div>
+                        <h3 class="text-lg font-bold text-red-700">4B. PAGO RECHAZADO: Diagnóstico Bancario</h3>
+                        <p class="text-sm text-gray-600">El banco rechaza el pago y arroja un diagnóstico. <strong class="text-red-600">Se requiere acción correctiva.</strong></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección 6 y 7: Rechazos Bancarios y Prevención --><section class="mb-12">
+            <h2 class="text-2xl font-bold text-red-600 mb-4 flex items-center">
+                <!-- Icono de Advertencia --><svg class="w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.3 16c-.77 1.333.192 3 1.732 3z"></path></svg>
+                6 & 7. Rechazo Bancario: Solución y Prevención
+            </h2>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+
+                <!-- Columna 1: ¿Cómo Cobrar si Fui Rechazado? --><div class="bg-red-50 p-6 rounded-lg shadow border-l-4 border-red-500">
+                    <h3 class="text-xl font-bold text-red-700 mb-3">6. ¿Cómo Cobrar si el Pago fue Rechazado?</h3>
+                    <p class="mb-3 text-gray-700">
+                        Se te notificará por <strong class="font-semibold">correo electrónico y llamada telefónica</strong>. Deberás elegir entre:
+                    </p>
+                    <ul class="list-disc pl-5 space-y-2 text-gray-600 text-sm">
+                        <li>
+                            <strong class="text-red-500">Opción 1:</strong> Proporcionar una <strong class="font-semibold">nueva cuenta bancaria</strong> que cumpla con los requisitos.
+                        </li>
+                        <li>
+                            <strong class="text-red-500">Opción 2:</strong> Realizar una <strong class="font-semibold">acción con tu banco</strong> para corregir el motivo del rechazo:
+                            <ul class="list-circle pl-6 mt-1">
+                                <li>Aumentar el límite de depósito permitido.</li>
+                                <li>Desbloquear o reactivar la cuenta.</li>
+                                <li>Verificar si existe un bloqueo por trámite judicial.</li>
+                            </ul>
+                        </li>
+                    </div>
+
+                <!-- Columna 2: ¿Cómo Evitar el Rechazo? --><div class="bg-green-50 p-6 rounded-lg shadow border-l-4 border-green-500">
+                    <h3 class="text-xl font-bold text-green-700 mb-3">7. ¿Cómo Evitar un Rechazo Bancario?</h3>
+                    <p class="mb-3 text-gray-700">
+                        Asegúrate de que la cuenta bancaria para el depósito cumpla con estos 3 puntos críticos:
+                    </p>
+                    <ul class="list-disc pl-5 space-y-2 text-gray-700 font-medium">
+                        <li class="flex items-center">
+                            <span class="text-green-600 mr-2 text-xl font-bold">&#10003;</span>
+                            <span class="flex-1">Cuenta <strong class="font-extrabold">SIN LÍMITE DE DEPÓSITO</strong>.</span>
+                        </li>
+                        <li class="flex items-center">
+                            <span class="text-green-600 mr-2 text-xl font-bold">&#10003;</span>
+                            <span class="flex-1">La cuenta debe estar <strong class="font-extrabold">ACTIVA</strong>.</span>
+                        </li>
+                        <li class="flex items-center">
+                            <span class="text-green-600 mr-2 text-xl font-bold">&#10003;</span>
+                            <span class="flex-1">La cuenta debe <strong class="font-extrabold">pertenecer al titular o beneficiario</strong> (sin cuentas de terceros).</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección 8: Top 3 Bancos y Motivos de Rechazo --><section class="mb-12">
+            <h2 class="text-2xl font-bold text-primary mb-6 flex items-center">
+                <!-- Icono de Podio --><svg class="w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 11v3m0-3h.01M15 11v3m0-3h.01M12 21a9 9 0 110-18 9 9 0 010 18z"></path></svg>
+                8. Análisis de Rechazos Bancarios: Top 3
+            </h2>
+
+            <div class="bg-card-bg p-6 rounded-lg shadow">
+                <h3 class="text-xl font-bold text-red-600 mb-4">Los 3 Bancos con más Rechazos (Histórico Operacional):</h3>
+                <div class="grid grid-cols-3 gap-4 text-center mb-6">
+                    <div class="p-3 bg-red-100 rounded-lg border-b-4 border-red-500">
+                        <span class="text-2xl font-black text-red-500">1°</span>
+                        <p class="font-bold text-gray-700">BBVA</p>
+                    </div>
+                    <div class="p-3 bg-yellow-100 rounded-lg border-b-4 border-yellow-500">
+                        <span class="text-2xl font-black text-yellow-600">2°</span>
+                        <p class="font-bold text-gray-700">BanCoppel</p>
+                    </div>
+                    <div class="p-3 bg-blue-100 rounded-lg border-b-4 border-blue-500">
+                        <span class="text-2xl font-black text-blue-700">3°</span>
+                        <p class="font-bold text-gray-700">Banorte</p>
+                    </div>
+                </div>
+
+                <h3 class="text-xl font-bold text-primary mb-4 border-t pt-4">Motivos Comunes de Rechazo (Diagnóstico Bancario):</h3>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <div class="bg-gray-100 p-3 rounded-md text-sm">
+                        <p class="font-semibold text-gray-800">1. Excede el límite de saldo/importe autorizado</p>
+                        <p class="text-xs text-gray-500">El trabajador debe aumentar el límite o usar otra cuenta.</p>
+                    </div>
+                    <div class="bg-gray-100 p-3 rounded-md text-sm">
+                        <p class="font-semibold text-gray-800">2. Cuenta Cancelada por el Cliente</p>
+                        <p class="text-xs text-gray-500">La cuenta ya no existe; se necesita una nueva.</p>
+                    </div>
+                    <div class="bg-gray-100 p-3 rounded-md text-sm">
+                        <p class="font-semibold text-gray-800">3. Excede el importe permitido por mes</p>
+                        <p class="text-xs text-gray-500">Relacionado con la limitación de la cuenta (Cuentas Nivel 2).</p>
+                    </div>
+                    <div class="bg-gray-100 p-3 rounded-md text-sm">
+                        <p class="font-semibold text-gray-800">4. SIN VALIDACIÓN DE CEP</p>
+                        <p class="text-xs text-gray-500">Problema en la validación de la transferencia.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pie de página (Opcional, pero bueno para el cierre) --><footer class="text-center mt-12 py-6 border-t border-gray-200">
+            <p class="text-sm text-gray-500">La clave para el cobro exitoso siempre será la correcta validación de la cuenta CLABE.</p>
+        </footer>
+
+    </div>
+
+</body>
+</html>
